@@ -1,10 +1,10 @@
 <?php
 
-namespace Elasticsearch\Endpoints{% for class in namespace %}{{ loop.last ? ';' : '\\' ~ class|title  }}{%  endfor %}
+namespace Elasticsearch24\Endpoints{% for class in namespace %}{{ loop.last ? ';' : '\\' ~ class|title  }}{%  endfor %}
 
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use Elasticsearch24\Endpoints\AbstractEndpoint;
+use Elasticsearch24\Common\Exceptions;
 
 /**
  * Class {{ className|title }}

@@ -1,10 +1,10 @@
 <?php
 
-namespace Elasticsearch\Tests;
+namespace Elasticsearch24\Tests;
 
 use Elasticsearch;
-use Elasticsearch\ClientBuilder;
-use Elasticsearch\Connections\Connection;
+use Elasticsearch24\ClientBuilder;
+use Elasticsearch24\Connections\Connection;
 use Mockery as m;
 
 /**

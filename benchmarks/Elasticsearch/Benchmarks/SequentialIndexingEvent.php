@@ -1,9 +1,9 @@
 <?php
 
-namespace Elasticsearch\Benchmarks;
+namespace Elasticsearch24\Benchmarks;
 
 use Athletic\AthleticEvent;
-use Elasticsearch\ClientBuilder;
+use Elasticsearch24\ClientBuilder;
 
 class SequentialIndexingEvent extends AthleticEvent
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Elasticsearch\Tests\ConnectionPool\Selectors;
+namespace Elasticsearch24\Tests\ConnectionPool\Selectors;
 
 use Elasticsearch;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Elasticsearch\Tests\Helper\Iterators;
+namespace Elasticsearch24\Tests\Helper\Iterators;
 
-use Elasticsearch\Helper\Iterators\SearchResponseIterator;
+use Elasticsearch24\Helper\Iterators\SearchResponseIterator;
 use Mockery as m;
 
 /**

@@ -1,5 +1,5 @@
 <?php
-use Elasticsearch\ClientBuilder;
+use Elasticsearch24\ClientBuilder;
 
 /**
  * Class SniffingConnectionPoolIntegrationTest

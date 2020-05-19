@@ -1,14 +1,14 @@
 <?php
 
-namespace Elasticsearch\Tests;
+namespace Elasticsearch24\Tests;
 
 use Elasticsearch;
-use Elasticsearch\Common\Exceptions\BadRequest400Exception;
-use Elasticsearch\Common\Exceptions\Conflict409Exception;
-use Elasticsearch\Common\Exceptions\Forbidden403Exception;
-use Elasticsearch\Common\Exceptions\Missing404Exception;
-use Elasticsearch\Common\Exceptions\RequestTimeout408Exception;
-use Elasticsearch\Common\Exceptions\ServerErrorResponseException;
+use Elasticsearch24\Common\Exceptions\BadRequest400Exception;
+use Elasticsearch24\Common\Exceptions\Conflict409Exception;
+use Elasticsearch24\Common\Exceptions\Forbidden403Exception;
+use Elasticsearch24\Common\Exceptions\Missing404Exception;
+use Elasticsearch24\Common\Exceptions\RequestTimeout408Exception;
+use Elasticsearch24\Common\Exceptions\ServerErrorResponseException;
 use FilesystemIterator;
 use GuzzleHttp\Ring\Future\FutureArrayInterface;
 use RecursiveDirectoryIterator;
