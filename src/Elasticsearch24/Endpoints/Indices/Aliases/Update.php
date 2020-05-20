@@ -9,7 +9,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Update
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Aliases
+ * @package  Elasticsearch24\Endpoints\Indices\Aliases
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -19,7 +19,7 @@ class Update extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \Elasticsearch24\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)
@@ -56,7 +56,7 @@ class Update extends AbstractEndpoint
 
     /**
      * @return array
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \Elasticsearch24\Common\Exceptions\RuntimeException
      */
     protected function getBody()
     {

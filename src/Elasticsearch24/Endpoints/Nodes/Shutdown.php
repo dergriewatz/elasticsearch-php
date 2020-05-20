@@ -6,7 +6,7 @@ namespace Elasticsearch24\Endpoints\Nodes;
  * Class Shutdown
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cluster\Nodes
+ * @package  Elasticsearch24\Endpoints\Cluster\Nodes
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

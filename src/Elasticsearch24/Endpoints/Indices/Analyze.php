@@ -9,7 +9,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Analyze
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices
+ * @package  Elasticsearch24\Endpoints\Indices
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -19,7 +19,7 @@ class Analyze extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \Elasticsearch24\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)

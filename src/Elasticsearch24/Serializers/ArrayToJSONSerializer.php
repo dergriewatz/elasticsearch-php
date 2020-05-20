@@ -6,7 +6,7 @@ namespace Elasticsearch24\Serializers;
  * Class JSONSerializer
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Serializers\JSONSerializer
+ * @package  Elasticsearch24\Serializers\JSONSerializer
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

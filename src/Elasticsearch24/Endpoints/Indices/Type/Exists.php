@@ -9,7 +9,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Exists
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Type
+ * @package  Elasticsearch24\Endpoints\Indices\Type
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -17,7 +17,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
 class Exists extends AbstractEndpoint
 {
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \Elasticsearch24\Common\Exceptions\RuntimeException
      * @return string
      */
     protected function getURI()

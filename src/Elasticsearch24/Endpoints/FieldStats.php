@@ -8,7 +8,7 @@ use Elasticsearch24\Common\Exceptions;
  * Class FieldStats
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @package  Elasticsearch24\Endpoints
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -19,7 +19,7 @@ class FieldStats extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \Elasticsearch24\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)

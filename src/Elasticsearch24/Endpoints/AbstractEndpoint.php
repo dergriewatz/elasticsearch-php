@@ -11,7 +11,7 @@ use GuzzleHttp\Ring\Future\FutureArrayInterface;
  * Class AbstractEndpoint
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @package  Elasticsearch24\Endpoints
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -36,7 +36,7 @@ abstract class AbstractEndpoint
     /** @var  array */
     protected $body = null;
 
-    /** @var \Elasticsearch\Transport */
+    /** @var \Elasticsearch24\Transport */
     private $transport = null;
 
     /** @var array */
@@ -232,7 +232,7 @@ abstract class AbstractEndpoint
     /**
      * @param array $params
      *
-     * @throws \Elasticsearch\Common\Exceptions\UnexpectedValueException
+     * @throws \Elasticsearch24\Common\Exceptions\UnexpectedValueException
      */
     private function checkUserParams($params)
     {

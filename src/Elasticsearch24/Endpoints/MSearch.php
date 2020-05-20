@@ -10,7 +10,7 @@ use Elasticsearch24\Transport;
  * Class MSearch
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @package  Elasticsearch24\Endpoints
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -35,7 +35,7 @@ class MSearch extends AbstractEndpoint
     /**
      * @param array|string $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \Elasticsearch24\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)
@@ -89,7 +89,7 @@ class MSearch extends AbstractEndpoint
 
     /**
      * @return array
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \Elasticsearch24\Common\Exceptions\RuntimeException
      */
     protected function getBody()
     {

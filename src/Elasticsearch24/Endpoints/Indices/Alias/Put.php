@@ -9,7 +9,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Put
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Alias
+ * @package  Elasticsearch24\Endpoints\Indices\Alias
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -22,7 +22,7 @@ class Put extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \Elasticsearch24\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)
@@ -53,7 +53,7 @@ class Put extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \Elasticsearch24\Common\Exceptions\RuntimeException
      * @return string
      */
     protected function getURI()

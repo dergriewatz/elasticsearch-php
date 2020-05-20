@@ -9,7 +9,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class GetField
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Mapping
+ * @package  Elasticsearch24\Endpoints\Indices\Mapping
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -40,7 +40,7 @@ class GetField extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \Elasticsearch24\Common\Exceptions\RuntimeException
      * @return string
      */
     protected function getURI()

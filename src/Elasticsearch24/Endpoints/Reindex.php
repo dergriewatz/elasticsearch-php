@@ -8,7 +8,7 @@ use Elasticsearch24\Common\Exceptions;
  * Class Reindex
  *
  * @category Elasticsearch
- * @package Elasticsearch\Endpoints *
+ * @package Elasticsearch24\Endpoints *
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -18,7 +18,7 @@ class Reindex extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \Elasticsearch24\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)
@@ -65,7 +65,7 @@ class Reindex extends AbstractEndpoint
 
     /**
      * @return array
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \Elasticsearch24\Common\Exceptions\RuntimeException
      */
     protected function getBody()
     {

@@ -8,7 +8,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Snapshot
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Gateway
+ * @package  Elasticsearch24\Endpoints\Indices\Gateway
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

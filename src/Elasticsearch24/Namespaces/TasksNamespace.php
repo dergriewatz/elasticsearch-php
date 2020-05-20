@@ -6,7 +6,7 @@ namespace Elasticsearch24\Namespaces;
  * Class TasksNamespace
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\TaskNamespace
+ * @package  Elasticsearch24\Namespaces\TaskNamespace
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -35,7 +35,7 @@ class TasksNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Tasks\Cancel $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Tasks\Cancel $endpoint */
         $endpoint = $endpointBuilder('Tasks\Cancel');
         $endpoint->setTaskId($taskID);
         $endpoint->setParams($params);
@@ -69,7 +69,7 @@ class TasksNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Tasks\Get $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Tasks\Get $endpoint */
         $endpoint = $endpointBuilder('Tasks\Get');
         $endpoint->setTaskId($taskID);
         $endpoint->setParams($params);
@@ -102,7 +102,7 @@ class TasksNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Tasks\Get $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Tasks\Get $endpoint */
         $endpoint = $endpointBuilder('Tasks\Get');
         $endpoint->setTaskId($taskID);
         $endpoint->setParams($params);

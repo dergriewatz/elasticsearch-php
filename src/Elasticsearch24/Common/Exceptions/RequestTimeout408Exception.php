@@ -6,7 +6,7 @@ namespace Elasticsearch24\Common\Exceptions;
  * RequestTimeout408Exception
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions
+ * @package  Elasticsearch24\Common\Exceptions
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

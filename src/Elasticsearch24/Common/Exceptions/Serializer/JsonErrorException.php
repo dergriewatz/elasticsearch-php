@@ -8,7 +8,7 @@ use Elasticsearch24\Common\Exceptions\ElasticsearchException;
  * Class JsonErrorException
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions\Curl
+ * @package  Elasticsearch24\Common\Exceptions\Curl
  * @author   Bez Hermoso <bezalelhermoso@gmail.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

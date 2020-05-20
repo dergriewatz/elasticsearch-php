@@ -8,7 +8,7 @@ use Elasticsearch24\Connections\ConnectionInterface;
  * Class StickyRoundRobinSelector
  *
  * @category Elasticsearch
- * @package  Elasticsearch\ConnectionPool\Selectors\ConnectionPool
+ * @package  Elasticsearch24\ConnectionPool\Selectors\ConnectionPool
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

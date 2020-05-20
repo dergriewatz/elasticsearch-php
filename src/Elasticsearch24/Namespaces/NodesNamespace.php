@@ -6,7 +6,7 @@ namespace Elasticsearch24\Namespaces;
  * Class NodesNamespace
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\NodesNamespace
+ * @package  Elasticsearch24\Namespaces\NodesNamespace
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -49,7 +49,7 @@ class NodesNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Nodes\Stats $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Nodes\Stats $endpoint */
         $endpoint = $endpointBuilder('Nodes\Stats');
         $endpoint->setNodeID($nodeID)
                  ->setMetric($metric)
@@ -83,7 +83,7 @@ class NodesNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Nodes\Info $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Nodes\Info $endpoint */
         $endpoint = $endpointBuilder('Nodes\Info');
         $endpoint->setNodeID($nodeID)->setMetric($metric);
         $endpoint->setParams($params);
@@ -115,7 +115,7 @@ class NodesNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Nodes\HotThreads $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Nodes\HotThreads $endpoint */
         $endpoint = $endpointBuilder('Nodes\HotThreads');
         $endpoint->setNodeID($nodeID);
         $endpoint->setParams($params);
@@ -143,7 +143,7 @@ class NodesNamespace extends AbstractNamespace
         /** @var callback $endpointBuilder */
         $endpointBuilder = $this->endpoints;
 
-        /** @var \Elasticsearch\Endpoints\Nodes\Shutdown $endpoint */
+        /** @var \Elasticsearch24\Endpoints\Nodes\Shutdown $endpoint */
         $endpoint = $endpointBuilder('Nodes\Shutdown');
         $endpoint->setNodeID($nodeID);
         $endpoint->setParams($params);

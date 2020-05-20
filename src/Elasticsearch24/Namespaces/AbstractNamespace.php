@@ -8,14 +8,14 @@ use Elasticsearch24\Transport;
  * Class AbstractNamespace
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Namespaces
+ * @package  Elasticsearch24\Namespaces
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
  */
 abstract class AbstractNamespace
 {
-    /** @var \Elasticsearch\Transport */
+    /** @var \Elasticsearch24\Transport */
     protected $transport;
 
     /** @var  callback */

@@ -8,7 +8,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Clear
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Cache
+ * @package  Elasticsearch24\Endpoints\Indices\Cache
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

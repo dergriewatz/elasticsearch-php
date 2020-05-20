@@ -9,7 +9,7 @@ use Elasticsearch24\Endpoints\AbstractEndpoint;
  * Class Get
  *
  * @category Elasticsearch
- * @package Elasticsearch\Endpoints\Tasks *
+ * @package Elasticsearch24\Endpoints\Tasks *
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org

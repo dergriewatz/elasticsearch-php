@@ -29,7 +29,7 @@ use Psr\Log\LoggerInterface;
  * Class AbstractConnection
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Connections
+ * @package  Elasticsearch24\Connections
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -92,7 +92,7 @@ class Connection implements ConnectionInterface
      * @param $handler
      * @param array $hostDetails
      * @param array $connectionParams Array of connection-specific parameters
-     * @param \Elasticsearch\Serializers\SerializerInterface $serializer
+     * @param \Elasticsearch24\Serializers\SerializerInterface $serializer
      * @param \Psr\Log\LoggerInterface $log              Logger object
      * @param \Psr\Log\LoggerInterface $trace
      */
@@ -133,7 +133,7 @@ class Connection implements ConnectionInterface
      * @param null $params
      * @param null $body
      * @param array $options
-     * @param \Elasticsearch\Transport $transport
+     * @param \Elasticsearch24\Transport $transport
      * @return mixed
      */
     public function performRequest($method, $uri, $params = null, $body = null, $options = [], Transport $transport = null)
@@ -497,7 +497,7 @@ class Connection implements ConnectionInterface
     /**
      * @param $request
      * @param $response
-     * @return \Elasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost|\Elasticsearch\Common\Exceptions\Curl\CouldNotResolveHostException|\Elasticsearch\Common\Exceptions\Curl\OperationTimeoutException|\Elasticsearch\Common\Exceptions\MaxRetriesException
+     * @return \Elasticsearch24\Common\Exceptions\Curl\CouldNotConnectToHost|\Elasticsearch24\Common\Exceptions\Curl\CouldNotResolveHostException|\Elasticsearch24\Common\Exceptions\Curl\OperationTimeoutException|\Elasticsearch24\Common\Exceptions\MaxRetriesException
      */
     protected function getCurlRetryException($request, $response)
     {
@@ -550,7 +550,7 @@ class Connection implements ConnectionInterface
      * @param $request
      * @param $response
      * @param $ignore
-     * @throws \Elasticsearch\Common\Exceptions\AlreadyExpiredException|\Elasticsearch\Common\Exceptions\BadRequest400Exception|\Elasticsearch\Common\Exceptions\Conflict409Exception|\Elasticsearch\Common\Exceptions\Forbidden403Exception|\Elasticsearch\Common\Exceptions\Missing404Exception|\Elasticsearch\Common\Exceptions\ScriptLangNotSupportedException|null
+     * @throws \Elasticsearch24\Common\Exceptions\AlreadyExpiredException|\Elasticsearch24\Common\Exceptions\BadRequest400Exception|\Elasticsearch24\Common\Exceptions\Conflict409Exception|\Elasticsearch24\Common\Exceptions\Forbidden403Exception|\Elasticsearch24\Common\Exceptions\Missing404Exception|\Elasticsearch24\Common\Exceptions\ScriptLangNotSupportedException|null
      */
     private function process4xxError($request, $response, $ignore)
     {
@@ -596,7 +596,7 @@ class Connection implements ConnectionInterface
      * @param $request
      * @param $response
      * @param $ignore
-     * @throws \Elasticsearch\Common\Exceptions\NoDocumentsToGetException|\Elasticsearch\Common\Exceptions\NoShardAvailableException|\Elasticsearch\Common\Exceptions\RoutingMissingException|\Elasticsearch\Common\Exceptions\ServerErrorResponseException
+     * @throws \Elasticsearch24\Common\Exceptions\NoDocumentsToGetException|\Elasticsearch24\Common\Exceptions\NoShardAvailableException|\Elasticsearch24\Common\Exceptions\RoutingMissingException|\Elasticsearch24\Common\Exceptions\ServerErrorResponseException
      */
     private function process5xxError($request, $response, $ignore)
     {
@@ -637,11 +637,11 @@ class Connection implements ConnectionInterface
     }
 
     private function tryDeserialize400Error($response) {
-        return $this->tryDeserializeError($response, 'Elasticsearch\Common\Exceptions\BadRequest400Exception');
+        return $this->tryDeserializeError($response, 'Elasticsearch24\Common\Exceptions\BadRequest400Exception');
     }
 
     private function tryDeserialize500Error($response) {
-        return $this->tryDeserializeError($response, 'Elasticsearch\Common\Exceptions\ServerErrorResponseException');
+        return $this->tryDeserializeError($response, 'Elasticsearch24\Common\Exceptions\ServerErrorResponseException');
     }
 
     private function tryDeserializeError($response, $errorClass) {
