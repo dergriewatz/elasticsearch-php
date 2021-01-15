@@ -295,13 +295,18 @@ class Connection implements ConnectionInterface
     private function getURI($uri, $params)
     {
         if (isset($params) === true && !empty($params)) {
-            array_walk($params, function (&$value, &$key) {
-                if ($value === true) {
-                    $value = 'true';
-                } else if ($value === false) {
-                    $value = 'false';
-                }
-            });
+            $params = array_map(
+                function ($value) {
+                    if ($value === true) {
+                        return 'true';
+                    } elseif ($value === false) {
+                        return 'false';
+                    }
+
+                    return $value;
+                },
+                $params
+            );
 
             $uri .= '?' . http_build_query($params);
         }
